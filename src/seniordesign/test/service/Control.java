@@ -16,7 +16,6 @@ public class Control extends Activity {
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
-    	/* this is a comment that I added */
         getMenuInflater().inflate(R.menu.activity_control, menu);
         return true;
     }
