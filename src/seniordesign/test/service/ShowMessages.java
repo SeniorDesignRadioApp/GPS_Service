@@ -16,6 +16,12 @@ public class ShowMessages extends Service implements LocationListener {
 	public void onCreate() {
 		lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
 		lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
+		Toast.makeText(getApplicationContext(), "Location display is on", Toast.LENGTH_SHORT).show();
+	}
+	
+	public void onDestroy() {
+		lm.removeUpdates(this);
+		Toast.makeText(getApplicationContext(), "Location display is off", Toast.LENGTH_SHORT).show();
 	}
 
 	public IBinder onBind(Intent intent) {
