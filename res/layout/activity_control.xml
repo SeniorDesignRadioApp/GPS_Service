@@ -7,9 +7,8 @@
     <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"
-        android:layout_height="150dip"
+        android:layout_height="75dip"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="false"
         android:onClick="startMessages"
         android:text="@string/button_start"
         android:textSize="50sp" />
@@ -17,12 +16,21 @@
 	<Button
 	    android:id="@+id/button2"
 	    android:layout_width="match_parent"
-	    android:layout_height="150dip"
+	    android:layout_height="75dip"
 	    android:layout_centerHorizontal="true"
 	    android:layout_centerVertical="false"
 	    android:layout_below="@id/button1"
 	    android:textSize="50sp"
 	    android:onClick="stopMessages"
 	    android:text="@string/button_stop" />
+
+	<TextView
+	    android:id="@+id/textView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text=""
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
